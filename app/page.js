@@ -79,7 +79,7 @@ export default function Home() {
             </div>
           </div>
           <div className="hero-yellow">
-            <img src="./imgs/dp_newv2.png" alt="Sutej Jantali" style={{ width: '100%', maxWidth: '600px', objectFit: 'contain' }} />
+            <img src="./imgs/dp-removebg.png" alt="Sutej Jantali" style={{ width: '100%', maxWidth: '600px', objectFit: 'contain' }} />
           </div>
         </section>
         <section className="logos container">

@@ -52,7 +52,7 @@ export default function Home() {
               Seeking an entry-level post in a reputed organization that will utilize my knowledge of web development and coding and help me contribute to achieving the company’s plans, alongside ascertaining my personal growth.
             </p>
             <div className="call-to-action">
-              <a href="#" className="button black" onClick={() => window.open("https://drive.google.com/file/d/1s7AcW10GwzDeLzbY1ZwnD6zgXQ7nwN3p/view?usp=sharing")}>
+              <a href="#" className="button black" onClick={() => window.open("https://drive.google.com/file/d/1c3XpMfR6UOhQrL9D7t-NuF-n-E30AOWP/view?usp=sharing")}>
                 View Resume
               </a>
               <a href="#" className="button white" onClick= {Contactme}>
@@ -79,7 +79,16 @@ export default function Home() {
             </div>
           </div>
           <div className="hero-yellow">
-            <img src="./imgs/dp-removebg.png" alt="Sutej Jantali" width="200%" />
+            <img
+  src="./imgs/dp_new.png"
+  alt="Sutej Jantali"
+  style={{
+    width: '0p560x',
+    maxWidth: '100%',
+    objectFit: 'contain'
+  }}
+/>
+
           </div>
         </section>
         <section className="logos container">

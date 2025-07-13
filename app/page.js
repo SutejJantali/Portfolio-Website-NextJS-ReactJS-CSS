@@ -29,9 +29,9 @@ export default function Home() {
             <li>
               <a href="#projects">Projects</a>
             </li>
-            <li>
+            {/*<li>
               <a href="#aichatbot">AI Chatbot</a>
-            </li>
+            </li>*/}
             <li>
               <a href="#Contactme" className="button" onClick={Contactme}>Contact Me</a>
             </li>
@@ -199,7 +199,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section id="aichatbot" className="chatbot container">
+        {/*<section id="aichatbot" className="chatbot container">
           <h2>
             <small>
               Talk to me
@@ -233,7 +233,7 @@ export default function Home() {
       ></iframe>
     </div>
     </div>
-        </section>
+        </section> */}
         <section className="Flexyfooter">
           <div className="footer">
             Made with &#128151; by Sutej

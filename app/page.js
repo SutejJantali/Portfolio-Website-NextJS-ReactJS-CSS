@@ -15,8 +15,8 @@ export default function Home() {
     <>
         <header>
         <a href="#" className="logo-holder" onClick= {() => location.reload()}>
-          <div className="logo">Pf</div>
-          <div className="logo-text">Portfolio Website</div>
+          <div className="logo">SJ</div>
+          <div className="logo-text">Sutej Jantali</div>
         </a>
         <nav>
           <ul id="menu" className={menuOpen ? "active" : ""}>
@@ -139,11 +139,12 @@ export default function Home() {
                 <li>Java</li>
                 <li>Python</li>
                 <li>JavaScript</li>
+                <li>React</li>
               </ul>
             </div>
             <div className="right-column">
               <h3>A bit about me</h3>
-              <p>Hi I'm Sutej, a versatile developer proficient in a diverse range of technologies. 
+              {/*<p>Hi I'm Sutej, a versatile developer proficient in a diverse range of technologies. 
                 My expertise spans across multiple programming languages and frameworks including C, C++, Java, Python, and JavaScript. 
                 I am adept at backend development using Node.js and Spring Boot, harnessing their capabilities to build robust and scalable applications. 
                 On the frontend, I excel in crafting intuitive user interfaces with HTML and CSS, ensuring a seamless user experience. 
@@ -152,21 +153,27 @@ export default function Home() {
               <p>
                 I am starting my career as an Application Developer at Texas Instruments, proficient in Spring Boot, JSP, Oracle Database, JavaScript, Java, and Oracle HCM. I specialize in backend development with Spring Boot and Java, creating dynamic web content with JSP and enhancing user interfaces with JavaScript. Experienced with Oracle Database and Oracle HCM, I am eager to contribute to impactful projects that leverage my skills in building scalable and efficient applications. 
                 I am committed to continuous learning and excited about the opportunities ahead to drive innovation and deliver high-quality solutions.
+              </p>*/}
+              <p>I'm Sutej Jantali, a passionate application developer with a strong foundation in full-stack development. I enjoy building scalable, user-centric solutions and am particularly drawn to solving complex technical challenges—especially in backend development, automation, and performance optimization.</p>
+              <p>
+              Currently, I’m working as an Application Developer at Texas Instruments, where I’ve contributed to major initiatives like automating onboarding workflows, integrating recruiting platforms, and optimizing internal portals. My work has been recognized with the Rising Star of the Quarter award.
               </p>
+              <p>
+              I’m skilled in technologies like Java, Spring Boot, Oracle SQL, JavaScript, and tools like Boomi Integration, and have worked across real-time systems using REST APIs, Oracle HCM, and BI Publisher.
+
+              Outside of work, I love exploring new technologies, automating repetitive tasks, and solving algorithmic challenges on platforms like Leetcode, GFG, and Hackerrank.
+
+              I'm currently open to new opportunities where I can learn, grow, and contribute to impactful products.
+              </p>              
             </div>
           </div>
         </section>
-        <section className="work-experience container">
+        {/*<section className="work-experience container">
           <h2>
             <small>Recent</small>
             Work Experience
           </h2>
           <h3>1. Texas Instruments</h3>
-          <p>
-            I commenced my professional journey as an Application Developer Intern at Texas Instruments, 
-            where I contributed from January 2024 to June 2024. 
-            Beginning July 2024, I eagerly embark on the next chapter as a full-time employee in Bengaluru.
-          </p>
           <div className="jobs">
             <article>
               <figure>
@@ -181,7 +188,45 @@ export default function Home() {
               <div>Jan 2024 - Jun 2024</div>
             </article>
           </div>
-        </section>
+        </section>*/}
+        <section class="work-experience container">
+  <h2>
+    <small>Professional</small>
+    Work Experience
+  </h2>
+  <h3>1. Texas Instruments</h3>
+  <div className="jobs">
+    <article>
+      <figure>
+        <div>
+          <img src="./imgs/ti.jpg" alt="Texas Instruments" width="100%" />
+          <figcaption>
+            Workplace - I
+          </figcaption>
+        </div>
+      </figure>
+      <h3>Texas Instruments</h3>
+      <ul>
+        <li><strong>Role:</strong> Application Developer</li>
+        <li><strong>Location:</strong> Bengaluru, India</li>
+        <li><strong>Jul 2024 – Present:</strong> Full Time</li>
+        <li><strong>Jan 2024 – Jun 2024:</strong> Internship</li>
+      </ul>
+      <p>
+        I began my journey as an Application Developer Intern and transitioned into a full-time role after demonstrating strong ownership and impactful contributions.
+      </p>
+      <ul>
+        <li>⚙️ <strong>Automated Onboarding Workflows:</strong> Integrated Moka (China hiring partner) with Oracle HCM and WeChat APIs to streamline hiring.</li>
+        <li>🌐 <strong>Portal Revamp:</strong> Redesigned and enhanced features in internal portals to improve workflows; brought untracked test codebases into production safely.</li>
+        <li>🧩 <strong>Backend Integrations:</strong> Built REST APIs and Boomi pipelines for system connectivity between external platforms and Oracle.</li>
+        <li>📈 <strong>Business Reporting:</strong> Delivered BI Publisher reports to support HR and recruitment analysis.</li>
+        <li>🏅 <strong>Awarded:</strong> <em>Rising Star of the Quarter (May 2024)</em> for outstanding ownership and execution.</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+
         <section id="projects" className="bento">
           <h2>
             <small>Previous</small>

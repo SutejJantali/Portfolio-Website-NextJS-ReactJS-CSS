@@ -1,42 +1,11 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Image from "next/image";
 
 export default function Home() {
-const [isDark, setIsDark] = useState(false);
-
-// On component mount: check if theme is saved in localStorage
-useEffect(() => {
-  const savedTheme = localStorage.getItem("theme");
-  if (savedTheme === "dark") {
-    setIsDark(true);
-    document.body.classList.add("dark-mode");
-  } else {
-    setIsDark(false);
-    document.body.classList.remove("dark-mode");
-  }
-}, []);
-
-// Watch isDark and update class + localStorage accordingly
-useEffect(() => {
-  if (isDark) {
-    document.body.classList.add("dark-mode");
-    localStorage.setItem("theme", "dark");
-  } else {
-    document.body.classList.remove("dark-mode");
-    localStorage.setItem("theme", "light");
-  }
-}, [isDark]);
-
-// Checkbox toggle handler
-const handleThemeToggle = (e) => {
-  setIsDark(e.target.checked);
-};
-
-
   const [menuOpen, setMenuOpen] = useState(false);
   const toggleMobileMenu = () => {
-    setMenuOpen(!menuOpen); 
+    setMenuOpen(!menuOpen);
   }
   const Contactme = () =>{
     alert("My Email: iamsutej@gmail.com \nPlease don't hesitate to contact me; I would be delighted to connect with you.");
@@ -44,55 +13,36 @@ const handleThemeToggle = (e) => {
   
   return (
     <>
-      <header className="header-with-theme-toggle">
-  <a href="#" className="logo-holder" onClick={() => location.reload()}>
-    <div className="logo">SJ</div>
-    <div className="logo-text">Sutej Jantali</div>
-  </a>
-
-  {/* 🌗 Theme Toggle from Uiverse.io */}
-  <label htmlFor="theme" className="theme">
-    <span className="theme__toggle-wrap">
-      <input
-  id="theme"
-  className="theme__toggle"
-  type="checkbox"
-  role="switch"
-  name="theme"
-  checked={isDark}
-  onChange={handleThemeToggle}
-/>
-      <span className="theme__fill"></span>
-      <span className="theme__icon">
-        <span className="theme__icon-part"></span>
-        <span className="theme__icon-part"></span>
-        <span className="theme__icon-part"></span>
-        <span className="theme__icon-part"></span>
-        <span className="theme__icon-part"></span>
-        <span className="theme__icon-part"></span>
-        <span className="theme__icon-part"></span>
-        <span className="theme__icon-part"></span>
-        <span className="theme__icon-part"></span>
-      </span>
-    </span>
-  </label>
-
-  <nav>
-    <ul id="menu" className={menuOpen ? "active" : ""}>
-      <li><a href="#imhero">Home</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li>
-        <a href="#Contactme" className="button" onClick={Contactme}>Contact Me</a>
-      </li>
-    </ul>
-    <a href="#" className="mobile-toggle" onClick={toggleMobileMenu}>
-      <svg className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-        <path stroke="currentColor" strokeLinecap="round" strokeWidth="2" d="M5 7h14M5 12h14M5 17h10" />
-      </svg>
-    </a>
-  </nav>
-</header>
+        <header>
+        <a href="#" className="logo-holder" onClick= {() => location.reload()}>
+          <div className="logo">SJ</div>
+          <div className="logo-text">Sutej Jantali</div>
+        </a>
+        <nav>
+          <ul id="menu" className={menuOpen ? "active" : ""}>
+            <li>
+              <a href="#imhero">Home</a>
+            </li>
+            <li>
+              <a href="#skills">Skills</a>
+            </li>
+            <li>
+              <a href="#projects">Projects</a>
+            </li>
+            {/*<li>
+              <a href="#aichatbot">AI Chatbot</a>
+            </li>*/}
+            <li>
+              <a href="#Contactme" className="button" onClick={Contactme}>Contact Me</a>
+            </li>
+          </ul>
+          <a href="#" className="mobile-toggle" onClick={toggleMobileMenu} >
+            <svg className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+              <path stroke="currentColor" strokeLinecap="round" strokeWidth="2" d="M5 7h14M5 12h14M5 17h10"/>
+            </svg>
+          </a>
+        </nav>
+      </header>
       <main>
         <section id="imhero" className="hero container">
           <div className="hero-blue">
@@ -194,6 +144,16 @@ const handleThemeToggle = (e) => {
             </div>
             <div className="right-column">
               <h3>A bit about me</h3>
+              {/*<p>Hi I'm Sutej, a versatile developer proficient in a diverse range of technologies. 
+                My expertise spans across multiple programming languages and frameworks including C, C++, Java, Python, and JavaScript. 
+                I am adept at backend development using Node.js and Spring Boot, harnessing their capabilities to build robust and scalable applications. 
+                On the frontend, I excel in crafting intuitive user interfaces with HTML and CSS, ensuring a seamless user experience. 
+                With a strong foundation in full-stack development, I bring creativity and efficiency to every project, leveraging my comprehensive skill set to deliver innovative solutions that meet both functional and aesthetic requirements.
+              </p>
+              <p>
+                I am starting my career as an Application Developer at Texas Instruments, proficient in Spring Boot, JSP, Oracle Database, JavaScript, Java, and Oracle HCM. I specialize in backend development with Spring Boot and Java, creating dynamic web content with JSP and enhancing user interfaces with JavaScript. Experienced with Oracle Database and Oracle HCM, I am eager to contribute to impactful projects that leverage my skills in building scalable and efficient applications. 
+                I am committed to continuous learning and excited about the opportunities ahead to drive innovation and deliver high-quality solutions.
+              </p>*/}
               <p>I'm Sutej Jantali, a passionate application developer with a strong foundation in full-stack development. I enjoy building scalable, user-centric solutions and am particularly drawn to solving complex technical challenges—especially in backend development, automation, and performance optimization.</p>
               <p>
               Currently, I’m working as an Application Developer at Texas Instruments, where I’ve contributed to major initiatives like automating onboarding workflows, integrating recruiting platforms, and optimizing internal portals. My work has been recognized with the Rising Star of the Quarter award.
@@ -208,7 +168,28 @@ const handleThemeToggle = (e) => {
             </div>
           </div>
         </section>
-        <section className="work-experience container">
+        {/*<section className="work-experience container">
+          <h2>
+            <small>Recent</small>
+            Work Experience
+          </h2>
+          <h3>1. Texas Instruments</h3>
+          <div className="jobs">
+            <article>
+              <figure>
+                <div>
+                  <img src="./imgs/ti.jpg" alt="Texas Instruments" width="100%" />
+                  <figcaption>
+                    Workplace - I
+                  </figcaption>
+                </div>
+              </figure>
+              <h3>Workplace - I</h3>
+              <div>Jan 2024 - Jun 2024</div>
+            </article>
+          </div>
+        </section>*/}
+        <section class="work-experience container">
   <h2>
     <small>Professional</small>
     Work Experience

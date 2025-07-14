@@ -8,7 +8,7 @@ export default function Home() {
     setMenuOpen(!menuOpen);
   }
   const Contactme = () =>{
-    alert("My Email: iamsutej@gmail.com \nPlease don't hesitate to contact me; I would be delighted to connect with you.");
+    alert("Please write to me at iamsutej@gmail.com \n I would be delighted to connect with you.");
   };
   
   return (

@@ -29,6 +29,9 @@ export default function Home() {
             <li>
               <a href="#projects">Projects</a>
             </li>
+            <li>
+              <a href="#Certifications">Certifications</a>
+            </li>
             {/*<li>
               <a href="#aichatbot">AI Chatbot</a>
             </li>*/}
@@ -49,7 +52,16 @@ export default function Home() {
             <h1><small>Hi I'm</small>
             Sutej Jantali</h1>
             <p>
-              Seeking an entry-level post in a reputed organization that will utilize my knowledge of web development and coding and help me contribute to achieving the company’s plans, alongside ascertaining my personal growth.
+            Enthusiastic Application developer
+            with passion for designing and
+            implementing software engineering
+            solutions. Demonstrated ability to
+            solve complex problems, particularly
+            in debugging and performance
+            optimization. Proficient in Java,
+            Spring Boot, React, and Automation.
+            Passionate about building scalable,
+            user-focused applications.            
             </p>
             <div className="call-to-action">
               <a href="#" className="button black" onClick={() => window.open("https://drive.google.com/file/d/1c3XpMfR6UOhQrL9D7t-NuF-n-E30AOWP/view?usp=sharing")}>
@@ -97,6 +109,7 @@ export default function Home() {
               <img src="./imgs/c.png" alt="C" width="128" />
               <img src="./imgs/JSP.png" alt="JavaServerPages" width="128" />
               <img src="./imgs/node-js.png" alt="NodeJS" width="128" />
+              <img src="./imgs/react.png" alt="React" width="128" />
               <img src="./imgs/html.png" alt="HTML" width="128"/>
               <img src="./imgs/css.png" alt="CSS" width="128"/>
               <img src="./imgs/JavaScript-logo.png" alt="JavaScript" width="128" />
@@ -109,6 +122,7 @@ export default function Home() {
               <img src="./imgs/c.png" alt="C" width="128" />
               <img src="./imgs/JSP.png" alt="JavaServerPages" width="128" />
               <img src="./imgs/node-js.png" alt="NodeJS" width="128" />
+              <img src="./imgs/react.png" alt="React" width="128" />
             </div>
           </div>
         </section>
@@ -125,6 +139,7 @@ export default function Home() {
                 <li>CSS</li>
                 <li>JavaScript</li>
                 <li>JavaServerPages</li>
+                <li>React</li>
               </ul>
               <h3>Backend</h3>
               <ul>
@@ -189,44 +204,42 @@ export default function Home() {
             </article>
           </div>
         </section>*/}
-        <section class="work-experience container">
-  <h2>
-    <small>Professional</small>
-    Work Experience
-  </h2>
-  <h3>1. Texas Instruments</h3>
-  <div className="jobs">
-    <article>
-      <figure>
-        <div>
-          <img src="./imgs/ti.jpg" alt="Texas Instruments" width="100%" />
-          <figcaption>
-            Workplace - I
-          </figcaption>
-        </div>
-      </figure>
-      <h3>Texas Instruments</h3>
-      <ul>
-        <li><strong>Role:</strong> Application Developer</li>
-        <li><strong>Location:</strong> Bengaluru, India</li>
-        <li><strong>Jul 2024 – Present:</strong> Full Time</li>
-        <li><strong>Jan 2024 – Jun 2024:</strong> Internship</li>
-      </ul>
-      <p>
-        I began my journey as an Application Developer Intern and transitioned into a full-time role after demonstrating strong ownership and impactful contributions.
-      </p>
-      <ul>
-        <li>⚙️ <strong>Automated Onboarding Workflows:</strong> Integrated Moka (China hiring partner) with Oracle HCM and WeChat APIs to streamline hiring.</li>
-        <li>🌐 <strong>Portal Revamp:</strong> Redesigned and enhanced features in internal portals to improve workflows; brought untracked test codebases into production safely.</li>
-        <li>🧩 <strong>Backend Integrations:</strong> Built REST APIs and Boomi pipelines for system connectivity between external platforms and Oracle.</li>
-        <li>📈 <strong>Business Reporting:</strong> Delivered BI Publisher reports to support HR and recruitment analysis.</li>
-        <li>🏅 <strong>Awarded:</strong> <em>Rising Star of the Quarter (May 2024)</em> for outstanding ownership and execution.</li>
-      </ul>
-    </article>
-  </div>
-</section>
-
-
+        <section className="work-experience container">
+          <h2>
+            <small>Professional</small>
+            Work Experience
+          </h2>
+          <h3>1. Texas Instruments</h3>
+          <div className="jobs">
+            <article>
+              <figure>
+                <div>
+                  <img src="./imgs/ti.jpg" alt="Texas Instruments" width="100%" />
+                  <figcaption>
+                    Workplace - I
+                  </figcaption>
+                </div>
+              </figure>
+              <h3>Texas Instruments</h3>
+              <ul>
+                <li><strong>Role:</strong> Application Developer</li>
+                <li><strong>Location:</strong> Bengaluru, India</li>
+                <li><strong>Jul 2024 – Present:</strong> Full Time</li>
+                <li><strong>Jan 2024 – Jun 2024:</strong> Internship</li>
+              </ul>
+              <p>
+                I began my journey as an Application Developer Intern and transitioned into a full-time role after demonstrating strong ownership and impactful contributions.
+              </p>
+              <ul>
+                <li>⚙️ <strong>Automated Onboarding Workflows:</strong> Integrated Moka (China hiring partner) with Oracle HCM and WeChat APIs to streamline hiring.</li>
+                <li>🌐 <strong>Portal Revamp:</strong> Redesigned and enhanced features in internal portals to improve workflows; brought untracked test codebases into production safely.</li>
+                <li>🧩 <strong>Backend Integrations:</strong> Built REST APIs and Boomi pipelines for system connectivity between external platforms and Oracle.</li>
+                <li>📈 <strong>Business Reporting:</strong> Delivered BI Publisher reports to support HR and recruitment analysis.</li>
+                <li>🏅 <strong>Awarded:</strong> <em>Rising Star of the Quarter (May 2024)</em> for outstanding ownership and execution.</li>
+              </ul>
+            </article>
+          </div>
+        </section>
         <section id="projects" className="bento">
           <h2>
             <small>Previous</small>
@@ -234,13 +247,19 @@ export default function Home() {
           </h2>
           <div className="bento-grid">
             <div className="bento-item">
+              <a href="#Projects" onClick={() => window.open("https://github.com/SutejJantali/Academic-Records-Management-System")}>
               <img src="./imgs/academic.png" alt="Academic Records Management System" width="100%" />
+              </a>
             </div>
             <div className="bento-item">
+              <a href="#Projects" onClick={() => window.open("https://github.com/SutejJantali/Sorting-Algo-Visualizer")}>
               <img src="./imgs/sorting.png" alt="Sorting Algorithm Visualizer" width="100%"/>
+              </a>
             </div>
             <div className="bento-item">
+              <a href="#Projects" onClick={() => window.open("https://github.com/SutejJantali/Cpp-Project-on-Banking-System")}>
               <img src="./imgs/Bank.png" alt="Banking System" alt="Banking System" width="100%" />
+              </a>
             </div>
           </div>
         </section>
@@ -279,6 +298,46 @@ export default function Home() {
     </div>
     </div>
         </section> */}
+        <section id="Certifications" className="bento">
+          <h2>
+            <small>Learnings so far</small>
+            Certifications
+          </h2>
+          <div className="bento-grid">
+            <div className="bento-item">
+              <a href="#Certifications" onClick={()=> window.open("https://drive.google.com/file/d/1tAHhkW-6NzOYChEXU7BXqDcZXv0BlqIq/view?usp=sharing")}>
+              <h2>Texas Instruments</h2>
+              <img src="./imgs/TI_Internship.jpg" alt="Texas Instruments Internship Certificate" width="100%" />
+              </a>
+            </div>
+            <div className="bento-item">
+              <a href="#Certifications" onClick={()=> window.open("https://drive.google.com/file/d/1Fck4PvEEHPaSs5rxmVTWB5QoWtw9AgPP/view?usp=sharing")}>
+              <img src="./imgs/Persistent Systems Internship.jpg" alt="Persistent Systems Internship Certificate" width="100%"/>
+              </a>
+            </div>
+            <div className="bento-item">
+              <a href="#Certifications" onClick={()=> window.open("https://drive.google.com/file/d/1kpv-AWxqFfvBbo8wYAv6iFgoEv0s2AkD/view?usp=sharing")}>
+              <img src="./imgs/RestfulAPI.jpg" alt="Banking System" alt="Restful API course Certificate" width="100%" />
+              </a>
+            </div>
+            <div className="bento-item">
+              <a href="#Certifications" onClick={()=> window.open("https://drive.google.com/file/d/1CB0QOWjpSkkefCtdFWvMiFE8ORIKWBP8/view?usp=sharing")}>
+              <img src="./imgs/DataIntegration.jpg" alt="Banking System" alt="Data Integration Certificate" width="100%" />
+              </a>
+            </div>
+            <div className="bento-item">
+              <a href="#Certifications" onClick={()=> window.open("https://drive.google.com/file/d/11x7yF71tPmB4zQ8zyRAXVcEDmwU7Kd0s/view?usp=sharing")}>
+              <img src="./imgs/McKinseyCertificate.png" alt="Banking System" alt="McKinsey Forward Learning Program Certificate" width="100%" />
+              </a>
+            </div>
+              <div className="bento-item">
+              <a href="#Certifications" onClick={()=> window.open("https://drive.google.com/file/d/1_T53779KRu_c9lOtKzNzl4lEDOAWe1BZ/view?usp=sharing")}>
+              <img src="./imgs/walmart.png" alt="Banking System" alt="Walmart USA Software Engineering Simulation Certificate by Forage" width="100%" />
+              </a>
+            </div>
+          </div>
+        </section>
+
         <section className="Flexyfooter">
           <div className="footer">
             Made with &#128151; by Sutej
